@@ -1,0 +1,30 @@
+.timer-container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#timer {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3E8E41;
+}
+
+button:active {
+    background-color: #1E6823;
+}

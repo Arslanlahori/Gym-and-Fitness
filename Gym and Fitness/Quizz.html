@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quiz</title>
+    <link rel="stylesheet" type="text/css" href="Quizz.css">
+
+</head>
+
+<body onload="NextQuestion(0); startTimer();">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="shopimg.html">Buy Product</a></li>
+                <li><a href="contact.html">Query Form</a></li>
+                <li><a href="Quizz.html" class="current-page">Quiz</a></li>
+                <li><a href="about.html">Student Details</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="sani">
+            <img src="mahanoor ghole logo.PNG" alt="Product Image">
+        </div>
+        <!-- creating a modal for when quiz ends -->
+        <div class="modal-container" id="score-modal">
+
+            <div class="modal-content-container">
+
+                <h1>Congratulations, Quiz Completed.</h1>
+
+                <div class="grade-details">
+                    <p>Attempts : 10</p>
+                    <p>Wrong Answers : <span id="wrong-answers"></span></p>
+                    <p>Right Answers : <span id="right-answers"></span></p>
+                    <p>Grade : <span id="grade-percentage"></span>%</p>
+                    <div id="totalTime"></div>
+                    <p><span id="remarks"></span></p>
+                </div>
+
+                <div class="modal-button-container">
+                    <button onclick="doSomething()">Total Time</button>
+                </div>
+
+            </div>
+        </div>
+        <!-- end of modal of quiz details-->
+
+        <div class="game-quiz-container">
+
+            <div class="game-details-container">
+                <h1>Score : <span id="player-score"></span> / 10</h1>
+                <div id="timer">00:00:00</div>
+                <h1> Question : <span id="question-number"></span> / 10</h1>
+            </div>
+
+            <div class="game-question-container">
+                <h1 id="display-question"></h1>
+            </div>
+
+            <div class="game-options-container">
+
+                <div class="modal-container" id="option-modal">
+
+                    <div class="modal-content-container">
+                        <h1>Please Pick An Option</h1>
+
+                        <div class="modal-button-container">
+                            <button onclick="closeOptionModal()">Continue</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <span>
+                    <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
+                    <label for="option-one" class="option" id="option-one-label"></label>
+                </span>
+
+
+                <span>
+                    <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
+                    <label for="option-two" class="option" id="option-two-label"></label>
+                </span>
+
+
+                <span>
+                    <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
+                    <label for="option-three" class="option" id="option-three-label"></label>
+                </span>
+
+
+                <span>
+                    <input type="radio" id="option-four" name="option" class="radio" value="optionD" />
+                    <label for="option-four" class="option" id="option-four-label"></label>
+                </span>
+
+
+            </div>
+
+            <div class="next-button-container">
+                <button onclick="handleNextQuestion()">Next Question</button>
+            </div>
+
+        </div>
+    </main>
+    <section id="footer">
+        <div class="main-footer">
+            <div class="logoinfo" data-aos="fade-up">
+                <h2>Page Editor</h2>
+
+                <a href="PageEditor1.html">
+                    <P><i>Sani Mohammed </i></P>
+                </a>
+                <a href="PageEditor2.html">
+                    <P><i>Iman Tarar</i></P>
+                </a>
+                <a href="PageEditor3.html">
+                    <P><i>Mahanoor Ghole</i></P>
+                </a>
+                <a href="PageEditor4.html">
+                    <P><i>Affan Khan</i></P>
+                </a>
+                <a href="PageEditor5.html">
+                    <P><i>Salma Begum</i></P>
+                </a>
+            </div>
+
+            <div class="com " data-aos="fade-up">
+                <h1>Links</h1>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="shopimg.html">Buy Product</a></li>
+                    <li><a href="contact.html">Query Form</a></li>
+                    <li><a href="Quizz.html">Quiz</a></li>
+                    <li><a href="about.html">Student Details</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <footer>© Your Copyright 2023 All Rights Reserved</footer>
+    </section>
+    <script src="Quizz.js"></script>
+</body>
+
+</html>

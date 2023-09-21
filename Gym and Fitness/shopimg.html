@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Buy Product</title>
+    <link rel="stylesheet" href="shoping.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="shopimg.html" class="current-page">Buy Product</a></li>
+                <li><a href="contact.html">Query Form</a></li>
+                <li><a href="Quizz.html">Quiz</a></li>
+                <li><a href="about.html">Student Details</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="sani">
+            <img src="Sani Mohammed logo.PNG" alt="Product Image">
+        </div>
+        <div id="myForm" class="container">
+            <h1>Buy Products</h1>
+            <br>
+            <!-- <p>Simplified 'add to cart' functionality. Uses Javascript
+                and WebStorage API/Cookies to remember cart data converted to JSON format.</p>
+            <p>Click 'Empty Cart' button to remove session cookies from browser.</p> -->
+            <div id="alerts"></div>
+            <div class="productcont">
+                <div class="product">
+                    <img src="protein cup.jpeg" alt="Product Image">
+                    <h3 class="productname">Product 1</h3>
+
+                    <p>Product description excerpt...</p>
+                    <p class="price">$5.05</p>
+                    <button class="addtocart" id="Button1">Add To Cart</button>
+                </div>
+                <div class="product">
+                    <img src="product 13.jpg" alt="Product Image">
+                    <h3 class="productname">Product 2</h3>
+
+                    <p>Product description excerpt...</p>
+                    <p class="price">$15.05</p>
+                    <button class="addtocart" id="Button1">Add To Cart</button>
+                </div>
+                <div class="product">
+                    <img src="product 14.jpg" alt="Product Image">
+                    <h3 class="productname">Product 3</h3>
+
+                    <p>Product description excerpt...</p>
+                    <p class="price">$25.05</p>
+                    <button class="addtocart" id="Button1">Add To Cart</button>
+                </div>
+            </div>
+            <br>
+            <div class="productcont">
+                <div class="product">
+                    <img src="product 3.jpg" alt="Product Image">
+                    <h3 class="productname">Product 4</h3>
+
+                    <p>Product description excerpt...</p>
+                    <p class="price">$20.05</p>
+                    <button class="addtocart" id="Button1">Add To Cart</button>
+                </div>
+                <div class="product">
+                    <img src="product 8.jpg" alt="Product Image">
+                    <h3 class="productname">Product 5</h3>
+
+                    <p>Product description excerpt...</p>
+                    <p class="price">$23.05</p>
+                    <button class="addtocart" id="Button1">Add To Cart</button>
+                </div>
+                <div class="product">
+                    <img src="product 11.jpg" alt="Product Image">
+                    <br>
+                    <h3 class="productname"><br><br>Product 6</h3>
+
+                    <p>Product description excerpt...</p>
+                    <p class="price">$85.05</p>
+                    <button class="addtocart" id="Button1">Add To Cart</button>
+                </div>
+            </div>
+            <br>
+            <div class="productcont">
+                <div class="product">
+                    <img src="product 10.jpg" alt="Product Image">
+                    <h3 class="productname">Product 7</h3>
+
+                    <p>Product description excerpt...</p>
+                    <p class="price">$15.05</p>
+                    <button class="addtocart" id="Button1">Add To Cart</button>
+                </div>
+                <div class="product">
+                    <img src="product 12.jpg" alt="Product Image">
+                    <h3 class="productname">Product 8</h3>
+
+                    <p>Product description excerpt...</p>
+                    <p class="price">$35.05</p>
+                    <button class="addtocart" id="Button1">Add To Cart</button>
+                </div>
+                <div class="product">
+                    <img src="product 4.jpg" alt="Product Image">
+                    <h3 class="productname">Product 9</h3>
+
+                    <p>Product description excerpt...</p>
+                    <p class="price">$52.05</p>
+                    <button class="addtocart" id="Button1">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="cart-container">
+                <h2>Cart</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th><strong>Product</strong></th>
+                            <th><strong>Price</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody id="carttable">
+                    </tbody>
+                </table>
+                <hr>
+                <table id="carttotals">
+                    <tr>
+                        <td><strong>Items</strong></td>
+                        <td><strong>Total</strong></td>
+                    </tr>
+                    <tr>
+                        <td>x <span id="itemsquantity">0</span></td>
+
+                        <td>$<span id="total">0</span></td>
+                    </tr>
+                </table>
+
+
+                <div class="cart-buttons">
+                    <button id="emptycart">Empty Cart</button>
+                    <!-- <button id="checkout">Go For Payment</button> -->
+                    <button id="checkout" onclick="window.location.href='payment.html';">Go For Payment</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section id="footer">
+        <div class="main-footer">
+            <div class="logoinfo" data-aos="fade-up">
+                <h2>Page Editor</h2>
+
+                <a href="PageEditor1.html">
+                    <P><i>Sani Mohammed </i></P>
+                </a>
+                <a href="PageEditor2.html">
+                    <P><i>Iman Tarar</i></P>
+                </a>
+                <a href="PageEditor3.html">
+                    <P><i>Mahanoor Ghole</i></P>
+                </a>
+                <a href="PageEditor4.html">
+                    <P><i>Affan Khan</i></P>
+                </a>
+                <a href="PageEditor5.html">
+                    <P><i>Salma Begum</i></P>
+                </a>
+            </div>
+
+            <div class="com " data-aos="fade-up">
+                <h1>Links</h1>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="shopimg.html">Buy Product</a></li>
+                    <li><a href="contact.html">Query Form</a></li>
+                    <li><a href="Quizz.html">Quiz</a></li>
+                    <li><a href="about.html">Student Details</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+        <footer>© Your Copyright 2023 All Rights Reserved</footer>
+    </section>
+    <script src="shoping.js"></script>
+</body>
+
+</html>

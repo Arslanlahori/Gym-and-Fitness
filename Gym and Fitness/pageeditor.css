@@ -1,0 +1,15 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    line-height: 1.5em;
+    letter-spacing: 1.2px;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 50px;
+    padding-bottom: 15px;
+
+
+    background: linear-gradient(135deg, #69d2e7 0%, #a7dbd8 25%, #e0e4cc 46%, #e0e4cc 54%, #f38630 75%, #fa6900 100%);
+
+}
